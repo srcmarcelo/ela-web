@@ -29,6 +29,14 @@ export const NavbarLogo = styled.div`
   padding-right: 10%;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 900px) {
+    width: 50vw;
+  }
+  @media (max-width: 770px) {
+    justify-content: start;
+    margin-left: 10px;
+  }
 `;
 
 export const MenuContainer = styled.div`
@@ -38,6 +46,14 @@ export const MenuContainer = styled.div`
   padding-left: 5%;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1206px) {
+    justify-content: end;
+    padding-right: 8%;
+  }
+  @media (max-width: 550px) {
+    padding-right: 2%;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -47,6 +63,13 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: end;
   margin-top: 15px;
+
+  @media(max-width: 830px) {
+    grid-gap: 10px;
+  }
+  @media(max-width: 750px) {
+    grid-gap: 0px;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -56,6 +79,13 @@ export const StyledLink = styled(Link)`
   white-space: nowrap;
   padding: 10px;
   transition: 0.3s;
+
+  @media(max-width: 700px) {
+    font-size: 1rem;
+  }
+  @media(max-width: 600px) {
+    padding: 5px;
+  }
 
   &:hover {
     color: black;
@@ -71,8 +101,15 @@ export const StyledSpecialLink = styled(Link)`
   padding: 10px;
   transition: 0.3s;
 
+  @media(max-width: 700px) {
+    font-size: 1rem;
+  }
+  @media(max-width: 600px) {
+    padding: 5px;
+  }
+
   &:hover {
     color: black;
-    background: #fff ;
+    background: #fff;
   }
 `;

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDove } from "@fortawesome/free-solid-svg-icons";
+import { faDove, faBars } from "@fortawesome/free-solid-svg-icons";
 import {
   Container,
   NavbarContainer,
@@ -21,32 +21,54 @@ const RenderMainLink = () => (
   </Link>
 );
 
-const Navbar = () => (
-  <Container>
-    <NavbarContainer>
-      <NavbarLogo>
-        <RenderMainLink />
-      </NavbarLogo>
-      <MenuContainer>
-        <NavMenu>
-          <li>
-            <StyledLink to="/">Início</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/about_us">Informações</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/registration">Matrícula</StyledLink>
-          </li>
-          <li>
-            <StyledSpecialLink to="/work_with_us">
-              Trabalhe Conosco
-            </StyledSpecialLink>
-          </li>
-        </NavMenu>
-      </MenuContainer>
-    </NavbarContainer>
-  </Container>
-);
+const Navbar = () => {
+  const [mobile, setMobile] = useState(false);
+  const [bars, setBars] = useState(true);
+
+  window.onresize = displayWindowSize;
+  window.onload = displayWindowSize;
+
+  function displayWindowSize() {
+    const myWidth = window.innerWidth;
+    if (myWidth < 1206) setMobile(true);
+    else setMobile(false);
+  }
+
+  return (
+    <Container>
+      <NavbarContainer>
+        <NavbarLogo>
+          <RenderMainLink />
+        </NavbarLogo>
+        <MenuContainer>
+          {(mobile && bars) ? (
+            <FontAwesomeIcon
+              icon={faBars}
+              size="2x"
+              onClick={() => setBars(false)}
+            />
+          ) : (
+            <NavMenu>
+              <li>
+                <StyledLink to="/">Início</StyledLink>
+              </li>
+              <li>
+                <StyledLink to="/about_us">Informações</StyledLink>
+              </li>
+              <li>
+                <StyledLink to="/work_with_us">Trabalhe Conosco</StyledLink>
+              </li>
+              <li>
+                <StyledSpecialLink to="/registration">
+                  Matrícula
+                </StyledSpecialLink>
+              </li>
+            </NavMenu>
+          )}
+        </MenuContainer>
+      </NavbarContainer>
+    </Container>
+  );
+};
 
 export default Navbar;
