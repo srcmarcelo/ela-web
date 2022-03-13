@@ -1,10 +1,27 @@
-import './App.css';
+import React from "react";
+import { GlobalStyles } from "./fonts/fonts";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Registration from "./pages/Registration";
+import AboutUs from "./pages/AboutUs";
+import WorkWithUs from "./pages/WorkWithUs";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      opa
-    </div>
+    <>
+      <Router>
+        <GlobalStyles />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about_us" element={<AboutUs />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/work_with_us" element={<WorkWithUs />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
