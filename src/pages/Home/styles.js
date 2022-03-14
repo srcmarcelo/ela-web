@@ -12,7 +12,7 @@ export const PicturesComponent = styled.div`
   grid-auto-flow: column;
   background: #3089d7;
 
-  @media (max-width: 1206px) {
+  @media (max-width: 1070px) {
     grid-auto-flow: row;
     padding: 30px 0px 30px 0px;
   }
@@ -22,12 +22,28 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
+
+  .image {
+    height: 320px;
+
+    @media (max-width: 1206px) {
+      height: 280px;
+    }
+    @media (max-width: 480px) {
+      height: 260px;
+    }
+  }
 `;
 
 export const Title = styled.h1`
   color: #3089d7;
   font-size: 80px;
   margin-bottom: 0.2rem;
+  padding: 10px;
+
+  @media (max-width: 480px) {
+    font-size: 50px;
+  }
 `;
 
 export const NewsContainer = styled.div`
@@ -37,7 +53,7 @@ export const NewsContainer = styled.div`
   align-items: center;
   text-align: center;
   background: #3089d7;
-  padding: 30px 10px 30px 10px;
+  padding: 30px 10px 50px 10px;
 
   .title {
     font-size: 40px;

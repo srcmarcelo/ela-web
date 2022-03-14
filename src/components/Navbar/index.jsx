@@ -1,73 +1,79 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDove, faBars } from "@fortawesome/free-solid-svg-icons";
+import { faDove, faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import {
   Container,
-  NavbarContainer,
-  NavbarLogo,
-  MenuContainer,
-  NavMenu,
+  Menu,
+  NavLinks,
   StyledLink,
   StyledSpecialLink,
+  MenuLinks,
 } from "./styles";
 
-const RenderMainLink = () => (
-  <Link
-    to="/"
-    style={{ color: "#fff", fontSize: "2rem", textDecoration: "none" }}
-  >
-    ELA <FontAwesomeIcon icon={faDove} />
-  </Link>
-);
-
 const Navbar = () => {
-  const [mobile, setMobile] = useState(false);
-  const [bars, setBars] = useState(true);
-
   window.onresize = displayWindowSize;
   window.onload = displayWindowSize;
+  let myWidth = window.innerWidth;
+
+  const [mobile, setMobile] = useState(myWidth < 960);
+  const [menu, setMenu] = useState(false);
 
   function displayWindowSize() {
-    const myWidth = window.innerWidth;
-    if (myWidth < 1206) setMobile(true);
-    else setMobile(false);
+    myWidth = window.innerWidth;
+    setMobile(myWidth < 960);
   }
 
   return (
-    <Container>
-      <NavbarContainer>
-        <NavbarLogo>
-          <RenderMainLink />
-        </NavbarLogo>
-        <MenuContainer>
-          {(mobile && bars) ? (
+    <>
+      {menu && mobile ? (
+        <Menu>
+          <FontAwesomeIcon
+            icon={faX}
+            size="2x"
+            className="exitIcon"
+            onClick={() => setMenu(false)}
+          />
+          <div className="menuLinksContainer">
+            <MenuLinks onClick={() => setMenu(false)} to="/">
+              Início
+            </MenuLinks>
+            <MenuLinks onClick={() => setMenu(false)} to="/registration">
+              Matrícula
+            </MenuLinks>
+            <MenuLinks onClick={() => setMenu(false)} to="/about_us">
+              Informações
+            </MenuLinks>
+            <MenuLinks onClick={() => setMenu(false)} to="/work_with_us">
+              Trabalhe Conosco
+            </MenuLinks>
+          </div>
+        </Menu>
+      ) : (
+        <Container>
+          <Link to="/" className="logo">
+            ELA <FontAwesomeIcon icon={faDove} />
+          </Link>
+          {mobile ? (
             <FontAwesomeIcon
               icon={faBars}
+              className="bars"
               size="2x"
-              onClick={() => setBars(false)}
+              onClick={() => setMenu(true)}
             />
           ) : (
-            <NavMenu>
-              <li>
-                <StyledLink to="/">Início</StyledLink>
-              </li>
-              <li>
-                <StyledLink to="/about_us">Informações</StyledLink>
-              </li>
-              <li>
-                <StyledLink to="/work_with_us">Trabalhe Conosco</StyledLink>
-              </li>
-              <li>
-                <StyledSpecialLink to="/registration">
-                  Matrícula
-                </StyledSpecialLink>
-              </li>
-            </NavMenu>
+            <NavLinks>
+              <StyledLink to="/">Início</StyledLink>
+              <StyledLink to="/about_us">Informações</StyledLink>
+              <StyledLink to="/work_with_us">Trabalhe Conosco</StyledLink>
+              <StyledSpecialLink to="/registration">
+                Matrícula
+              </StyledSpecialLink>
+            </NavLinks>
           )}
-        </MenuContainer>
-      </NavbarContainer>
-    </Container>
+        </Container>
+      )}
+    </>
   );
 };
 

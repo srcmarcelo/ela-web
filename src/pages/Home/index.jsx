@@ -38,11 +38,11 @@ const Home = () => (
     </Container>
     <PicturesComponent>
       <Container style={{ alignItems: "center" }}>
-        <Image src="/images/side1.jpg" preview={false} height={320} />
+        <Image src="/images/side1.jpg" preview={false} className="image" />
       </Container>
       <HomeCarousel />
       <Container style={{ alignItems: "center" }}>
-        <Image src="/images/side2.jpg" preview={false} height={320} />
+        <Image src="/images/side2.jpg" preview={false} className="image" />
       </Container>
     </PicturesComponent>
     <Container>

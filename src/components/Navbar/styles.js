@@ -4,72 +4,77 @@ import { Link } from "react-router-dom";
 export const Container = styled.div`
   background: linear-gradient(90deg, blue, darkblue);
   font-family: "PT Sans", sans-serif;
-  margin-top: 0px;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
   position: sticky;
-  top: 0;
-  z-index: 999;
+
+  .logo {
+    align-self: center;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 20%;
+  }
+
+  .bars {
+    align-self: center;
+    justify-self: end;
+    margin-right: 20%;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 `;
 
-export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: end;
+export const Menu = styled.div`
+  display: grid;
+  background: #3089d7;
+  width: 100vw;
+  height: 100vh;
+  transition: 1s;
+
+  .menuLinksContainer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .exitIcon {
+    justify-self: end;
+    margin: 5% 7% 0px 0px;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+`;
+
+export const MenuLinks = styled(Link)`
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+
+  &:hover {
+    color: black;
+  }
+`;
+
+export const NavLinks = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 0fr);
+  gap: 5%;
   align-items: center;
-  height: 100%;
-  width: 100%;
-`;
-
-export const NavbarLogo = styled.div`
-  height: 100%;
-  width: 40vw;
-  display: flex;
-  padding-right: 10%;
+  justify-items: center;
   justify-content: center;
-  align-items: center;
-
-  @media (max-width: 900px) {
-    width: 50vw;
-  }
-  @media (max-width: 770px) {
-    justify-content: start;
-    margin-left: 10px;
-  }
-`;
-
-export const MenuContainer = styled.div`
-  height: 100%;
-  width: 60vw;
-  display: flex;
-  padding-left: 5%;
-  align-items: center;
-  justify-content: center;
-
-  @media (max-width: 1206px) {
-    justify-content: end;
-    padding-right: 8%;
-  }
-  @media (max-width: 550px) {
-    padding-right: 2%;
-  }
-`;
-
-export const NavMenu = styled.ul`
-  display: inline-grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 25px;
-  list-style: none;
-  text-align: end;
-  margin-top: 15px;
-
-  @media(max-width: 830px) {
-    grid-gap: 10px;
-  }
-  @media(max-width: 750px) {
-    grid-gap: 0px;
-  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -80,10 +85,10 @@ export const StyledLink = styled(Link)`
   padding: 10px;
   transition: 0.3s;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     font-size: 1rem;
   }
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     padding: 5px;
   }
 
@@ -101,10 +106,10 @@ export const StyledSpecialLink = styled(Link)`
   padding: 10px;
   transition: 0.3s;
 
-  @media(max-width: 700px) {
+  @media (max-width: 700px) {
     font-size: 1rem;
   }
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     padding: 5px;
   }
 
