@@ -32,6 +32,9 @@ export const Container = styled.div`
     @media (max-width: 480px) {
       height: 260px;
     }
+    @media (max-width: 300px) {
+      height: 230px;
+    }
   }
 `;
 
@@ -82,4 +85,8 @@ export const IconContainer = styled.div`
   padding: 20px;
   background: #fff;
   margin: 0px 50px 0px 50px;
+
+  @media (max-width: 330px) {
+    width: 100px;
+  }
 `;

@@ -18,6 +18,9 @@ export const CarouselContainer = styled(Carousel)`
   @media (max-width: 480px) {
     width: 280px;
   }
+  @media (max-width: 300px) {
+    width: 230px;
+  }
 `;
 
 export const Item = styled.div`
@@ -36,5 +39,8 @@ export const Item = styled.div`
     @media (max-width: 480px) {
       height: 260px;
     }
+
+  @media (max-width: 300px) {
+    height: 230px;
   }
 `;

@@ -19,11 +19,19 @@ import {
 import { Link } from "react-router-dom";
 
 const RenderIcon = ({ icon, label, path }) => {
+  window.onresize = displayWindowSize;
+  window.onload = displayWindowSize;
+  let myWidth = window.innerWidth;
+
+  function displayWindowSize() {
+    myWidth = window.innerWidth;
+  }
+
   return (
     <div>
       <IconContainer>
         <Link to={path}>
-          <FontAwesomeIcon icon={icon} size="10x" />
+          <FontAwesomeIcon icon={icon} size={ myWidth < 330 ? "5x" : "10x"} />
         </Link>
       </IconContainer>
       <span style={{ fontSize: "20px" }}>{label}</span>
