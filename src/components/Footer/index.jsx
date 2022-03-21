@@ -12,18 +12,25 @@ const Footer = () => (
     <div className="contactContainer">
       <div className="content">
         <div className="headers">Nos siga no Instagram!</div>
-        <FontAwesomeIcon icon={faInstagram} /> @educandariolereaprender
+        <a
+          style={{ color: "#fff" }}
+          target="_blank"
+          href="https://www.instagram.com/educandariolereaprender/"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faInstagram} /> @educandariolereaprender{" "}
+        </a>
       </div>
       <div className="content">
         <div className="headers">Contatos</div>
         <div className="contacts">
-          <FontAwesomeIcon icon={faPhone} />  (87) 988175129
+          <FontAwesomeIcon icon={faPhone} /> (87) 988175129
         </div>
         <div className="contacts">
-          <FontAwesomeIcon icon={faWhatsapp} />  (81) 988378335
+          <FontAwesomeIcon icon={faWhatsapp} /> (81) 988378335
         </div>
         <div className="contacts">
-          <FontAwesomeIcon icon={faEnvelope} />  ela@gmail.com
+          <FontAwesomeIcon icon={faEnvelope} /> ela@gmail.com
         </div>
       </div>
     </div>
