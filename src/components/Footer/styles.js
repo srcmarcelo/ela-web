@@ -13,8 +13,8 @@ export const FooterContainer = styled.div`
   .contactContainer {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(2, 1fr);
-    @media (max-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 960px) {
       grid-auto-flow: row;
       grid-template-columns: none;
     }
@@ -34,6 +34,10 @@ export const FooterContainer = styled.div`
 
       .contacts {
         font-size: 24px;
+      }
+
+      .address {
+        font-size: 18px;
       }
     }
   }

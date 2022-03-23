@@ -22,6 +22,11 @@ const Footer = () => (
         </a>
       </div>
       <div className="content">
+        <div className="headers">Endereço</div>
+        <div className="address">Segunda Travessa Pio XII, 205, Cajueiro Seco</div>
+        <div className="address">CEP: 54.330-320 | Jaboatão dos Guararapes - PE</div>
+      </div>
+      <div className="content">
         <div className="headers">Contatos</div>
         <div className="contacts">
           <FontAwesomeIcon icon={faPhone} /> (87) 988175129
