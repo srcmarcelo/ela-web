@@ -24,23 +24,23 @@ export const Container = styled.div`
   text-align: center;
 
   .image {
-    height: 320px;
+    height: 20rem;
 
     @media (max-width: 1206px) {
-      height: 280px;
+      height: 17.5rem;
     }
     @media (max-width: 480px) {
-      height: 260px;
+      height: 16.25rem;
     }
     @media (max-width: 300px) {
-      height: 230px;
+      height: 14.375rem;
     }
   }
 `;
 
 export const Title = styled.h1`
   color: #3089d7;
-  font-size: 80px;
+  font-size: 5rem;
   margin-bottom: 0.2rem;
   padding: 10px;
 

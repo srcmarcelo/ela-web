@@ -41,7 +41,7 @@ const Navbar = () => {
             <MenuLinks onClick={() => setMenu(false)} to="/registration">
               Matrícula
             </MenuLinks>
-            <MenuLinks onClick={() => setMenu(false)} to="/about_us">
+            <MenuLinks onClick={() => setMenu(false)} to="/information">
               Informações
             </MenuLinks>
             <MenuLinks onClick={() => setMenu(false)} to="/work_with_us">
@@ -64,7 +64,7 @@ const Navbar = () => {
           ) : (
             <NavLinks>
               <StyledLink to="/">Início</StyledLink>
-              <StyledLink to="/about_us">Informações</StyledLink>
+              <StyledLink to="/information">Informações</StyledLink>
               <StyledLink to="/work_with_us">Trabalhe Conosco</StyledLink>
               <StyledSpecialLink to="/registration">
                 Matrícula

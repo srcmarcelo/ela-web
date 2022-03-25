@@ -3,44 +3,45 @@ import { Carousel } from "antd";
 
 export const CarouselContainer = styled(Carousel)`
   background: red;
-  width: 550px;
+  width: 34.375rem;
   justify-content: center;
   align-items: center;
   background: #3089d7;
 
   @media (max-width: 1206px) {
-    width: 460px;
+    width: 28.75;
   }
 
   @media (max-width: 550px) {
-    width: 320px;
+    width: 26.25rem;
   }
   @media (max-width: 480px) {
-    width: 280px;
+    width: 17.5rem;
   }
   @media (max-width: 300px) {
-    width: 230px;
+    width: 14.375rem;
   }
 `;
 
 export const Item = styled.div`
   display: flex;
-  height: 380px;
-  margin-top: 60px;
+  height: 23.75rem;
+  margin-top: 3.75rem;
 
   .image {
-    height: 320px;
+    height: 20rem;
 
     @media (max-width: 1206px) {
-      height: 280px;
-      margin-top: 20px;
+      height: 17.5rem;
+      margin-top: 1.25rem;
     }
 
     @media (max-width: 480px) {
-      height: 260px;
+      height: 16.25rem;
     }
 
-  @media (max-width: 300px) {
-    height: 230px;
+    @media (max-width: 300px) {
+      height: 14.375rem;
+    }
   }
 `;

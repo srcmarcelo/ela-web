@@ -13,7 +13,7 @@ const Footer = () => (
       <div className="content">
         <div className="headers">Nos siga no Instagram!</div>
         <a
-          style={{ color: "#fff" }}
+          style={{ color: "#fff", textDecoration: "underline" }}
           target="_blank"
           href="https://www.instagram.com/educandariolereaprender/"
           rel="noreferrer"
@@ -23,8 +23,12 @@ const Footer = () => (
       </div>
       <div className="content">
         <div className="headers">Endereço</div>
-        <div className="address">Segunda Travessa Pio XII, 205, Cajueiro Seco</div>
-        <div className="address">CEP: 54.330-320 | Jaboatão dos Guararapes - PE</div>
+        <div className="address">
+          Segunda Travessa Pio XII, 205, Cajueiro Seco
+        </div>
+        <div className="address">
+          CEP: 54.330-320 | Jaboatão dos Guararapes - PE
+        </div>
       </div>
       <div className="content">
         <div className="headers">Contatos</div>
