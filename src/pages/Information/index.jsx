@@ -25,6 +25,26 @@ const Information = () => (
           </div>
         </div>
       </Content>
+      <Title>Infraestrutura</Title>
+      <Content>
+        <div className="building">
+          <div className="buildingInfo">
+            <h1>
+              Banda larga de alta velocidade, smart TV's e muitos recursos
+              multimídia pra uma melhor qualidade das aulas.
+            </h1>
+          </div>
+          <div className="buildingInfo">
+            <h1>Contamos com 8 salas climatizadas e bem organizadas.</h1>
+          </div>
+          <div className="buildingInfo">
+            <h1>
+              Estamos com um projeto em mãos para que, em breve, a escola ELA
+              será um prédio de primeiro andar!
+            </h1>
+          </div>
+        </div>
+      </Content>
       <Title>Eventos</Title>
       <Content>
         <div className="calendar">

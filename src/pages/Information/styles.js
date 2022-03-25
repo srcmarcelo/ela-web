@@ -41,6 +41,7 @@ export const Content = styled.div`
 
     @media (max-width: 960px) {
       grid-template-columns: repeat(1, 1fr);
+      gap: 0px;
     }
 
     .mainInfo {
@@ -63,11 +64,40 @@ export const Content = styled.div`
         display: flex;
         background-color: #fff;
         color: #3089d7;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 1rem;
         text-align: center;
         justify-content: center;
         align-items: center;
+      }
+    }
+  }
+
+  .building {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #3089d7;
+    padding: 20px;
+    gap: 3%;
+
+    @media (max-width: 960px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 0px;
+    }
+
+    .buildingInfo {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      background-color: #fff;
+
+      h1 {
+        display: flex;
+        margin: 0px;
+        font-size: 1.6rem;
+        color: #3089d7;
+        align-items: center;
+        padding: 5%;
       }
     }
   }
