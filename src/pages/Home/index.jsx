@@ -61,7 +61,7 @@ const Home = () => (
         CONHEÇA, COLABORE E MATRICULE SEU FILHO AGORA MESMO!
       </h2>
       <div className="iconsContainer">
-        <RenderIcon icon={faCircleInfo} label="Infomações" path="/about_us" />
+        <RenderIcon icon={faCircleInfo} label="Infomações" path="/information" />
         <RenderIcon
           icon={faChalkboardUser}
           label="Trabalhe Conosco"
