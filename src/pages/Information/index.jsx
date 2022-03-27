@@ -13,7 +13,7 @@ const Information = () => (
   <InfoContainer>
     <Container>
       <TitleContainer>
-        <Title style={{ marginTop: "70px" }}>Sobre Nós</Title>
+        <Title style={{ marginTop: "80px" }}>Sobre Nós</Title>
       </TitleContainer>
       <Content>
         <div className="aboutUs">

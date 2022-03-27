@@ -15,7 +15,7 @@ const WorkWithUs = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title style={{ marginTop: "70px" }}>Trabalhe Conosco!</Title>
+        <Title style={{ marginTop: "80px" }}>Trabalhe Conosco!</Title>
       </TitleContainer>
       <FormRedirect
         title="Sempre estamos precisando de mais gente compromissada e disposta a
