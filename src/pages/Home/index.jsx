@@ -30,8 +30,11 @@ const RenderIcon = ({ icon, label, path }) => {
   return (
     <div>
       <IconContainer>
-        <Link to={path}>
-          <FontAwesomeIcon icon={icon} size={ myWidth < 330 ? "5x" : "10x"} />
+        <Link
+          to={path}
+          onClick={() => (document.getElementById("root").scrollHeight = 0)}
+        >
+          <FontAwesomeIcon icon={icon} size={myWidth < 330 ? "5x" : "10x"} />
         </Link>
       </IconContainer>
       <span style={{ fontSize: "20px" }}>{label}</span>
@@ -61,7 +64,11 @@ const Home = () => (
         CONHEÇA, COLABORE E MATRICULE SEU FILHO AGORA MESMO!
       </h2>
       <div className="iconsContainer">
-        <RenderIcon icon={faCircleInfo} label="Infomações" path="/information" />
+        <RenderIcon
+          icon={faCircleInfo}
+          label="Infomações"
+          path="/information"
+        />
         <RenderIcon
           icon={faChalkboardUser}
           label="Trabalhe Conosco"

@@ -24,14 +24,16 @@ export const Container = styled.div`
   text-align: center;
 
   .image {
-    height: 20rem;
+    // height: 20rem;
+    height: 8rem;
 
     @media (max-width: 1206px) {
-      height: 17.5rem;
+      // height: 17.5rem;
+      height: 12.5rem;
     }
     @media (max-width: 480px) {
       // height: 16.25rem;
-      height: 12.375rem;
+      height: 12.25rem;
     }
     @media (max-width: 300px) {
       // height: 14.375rem;
