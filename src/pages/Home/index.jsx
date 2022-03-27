@@ -26,12 +26,16 @@ const RenderIcon = ({ icon, label, path }) => {
     myWidth = window.innerWidth;
   }
 
+  function setScrollTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div>
       <IconContainer>
         <Link
           to={path}
-          onClick={() => (document.getElementById("root").scrollHeight = 0)}
+          onClick={() => setScrollTop()}
         >
           <FontAwesomeIcon icon={icon} size={myWidth < 330 ? "5x" : "10x"} />
         </Link>
@@ -44,7 +48,7 @@ const RenderIcon = ({ icon, label, path }) => {
 const Home = () => (
   <HomeContainer>
     <Container>
-      <Title>Educandário Ler e Aprender</Title>
+      <Title style={{marginTop: "70px"}}>Educandário Ler e Aprender</Title>
     </Container>
     <PicturesComponent>
       <Container style={{ alignItems: "center" }}>
@@ -60,7 +64,7 @@ const Home = () => (
     </Container>
     <NewsContainer>
       <h2 className="title">
-        CONHEÇA, COLABORE E MATRICULE SEU FILHO AGORA MESMO!
+        CONHEÇA, COLABORE E MATRICULE SEU FILHO(A) AGORA MESMO!
       </h2>
       <div className="iconsContainer">
         <RenderIcon

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Title } from "./styles";
+import { Container, TitleContainer, Title } from "./styles";
 import Footer from "../../components/Footer";
 import FormRedirect from "../../components/FormRedirect";
 
@@ -14,7 +14,9 @@ const Registration = () => {
 
   return (
     <Container>
-      <Title>Matrículas</Title>
+      <TitleContainer>
+        <Title style={{ marginTop: "70px" }}>Matrículas</Title>
+      </TitleContainer>
       <FormRedirect
         title="Dê ao(a) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!"
         sub={`Para fazer a pré-matrícula,

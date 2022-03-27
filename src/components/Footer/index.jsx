@@ -33,13 +33,13 @@ const Footer = () => (
       <div className="content">
         <div className="headers">Contatos</div>
         <div className="contacts">
-          <FontAwesomeIcon icon={faPhone} /> (87) 988175129
+          <FontAwesomeIcon icon={faPhone} /> (81) 99538-6426
         </div>
         <div className="contacts">
-          <FontAwesomeIcon icon={faWhatsapp} /> (81) 988378335
+          <FontAwesomeIcon icon={faWhatsapp} /> (81) 99317-1853
         </div>
         <div className="contacts">
-          <FontAwesomeIcon icon={faEnvelope} /> ela@gmail.com
+          <FontAwesomeIcon icon={faEnvelope} /> naedja_14@hotmail.com
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Title } from "./styles";
+import { Container, TitleContainer, Title } from "./styles";
 import Footer from "../../components/Footer";
 import FormRedirect from "../../components/FormRedirect";
 
@@ -14,7 +14,9 @@ const WorkWithUs = () => {
 
   return (
     <Container>
-      <Title>Trabalhe Conosco!</Title>
+      <TitleContainer>
+        <Title style={{ marginTop: "70px" }}>Trabalhe Conosco!</Title>
+      </TitleContainer>
       <FormRedirect
         title="Sempre estamos precisando de mais gente compromissada e disposta a
           crescer junto com a gente!"
@@ -22,7 +24,7 @@ const WorkWithUs = () => {
           preencha o formulário ${
             myWidth < 960 ? "pressionando o" : "clicando no"
           } botão ${myWidth < 1068 ? "abaixo" : "ao lado"}!`}
-          link="https://forms.gle/oB2aFUup4CTWzyFh7"
+        link="https://forms.gle/oB2aFUup4CTWzyFh7"
       />
       <Footer />
     </Container>

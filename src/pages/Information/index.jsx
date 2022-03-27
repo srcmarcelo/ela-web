@@ -1,12 +1,20 @@
 import React from "react";
 import { Calendar } from "antd";
-import { InfoContainer, Container, Title, Content } from "./styles";
+import {
+  InfoContainer,
+  Container,
+  TitleContainer,
+  Title,
+  Content,
+} from "./styles";
 import Footer from "../../components/Footer";
 
 const Information = () => (
   <InfoContainer>
     <Container>
-      <Title>Sobre Nós</Title>
+      <TitleContainer>
+        <Title style={{ marginTop: "70px" }}>Sobre Nós</Title>
+      </TitleContainer>
       <Content>
         <div className="aboutUs">
           <div className="mainInfo">
@@ -25,7 +33,9 @@ const Information = () => (
           </div>
         </div>
       </Content>
-      <Title>Infraestrutura</Title>
+      <TitleContainer>
+        <Title>Infraestrutura</Title>
+      </TitleContainer>
       <Content>
         <div className="building">
           <div className="buildingInfo">
@@ -45,7 +55,9 @@ const Information = () => (
           </div>
         </div>
       </Content>
-      <Title>Eventos</Title>
+      <TitleContainer>
+        <Title>Eventos</Title>
+      </TitleContainer>
       <Content>
         <div className="calendar">
           <span>Calendário de Eventos</span>

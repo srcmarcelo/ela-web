@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Carousel } from "antd";
 
 export const CarouselContainer = styled(Carousel)`
-  background: red;
+  display: flex;
   width: 34.375rem;
   justify-content: center;
   align-items: center;

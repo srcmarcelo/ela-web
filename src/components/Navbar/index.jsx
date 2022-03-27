@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDove, faBars, faX } from "@fortawesome/free-solid-svg-icons";
@@ -23,6 +23,14 @@ const Navbar = () => {
     myWidth = window.innerWidth;
     setMobile(myWidth < 960);
   }
+
+  function setScrollTop() {
+    window.scrollTo(0, 0);
+  }
+
+  useEffect(() => {
+    if (menu) setScrollTop();
+  }, [menu]);
 
   return (
     <>
@@ -51,7 +59,7 @@ const Navbar = () => {
         </Menu>
       ) : (
         <Container>
-          <Link to="/" className="logo">
+          <Link onClick={() => setScrollTop()} to="/" className="logo">
             ELA <FontAwesomeIcon icon={faDove} />
           </Link>
           {mobile ? (
@@ -63,10 +71,19 @@ const Navbar = () => {
             />
           ) : (
             <NavLinks>
-              <StyledLink to="/">Início</StyledLink>
-              <StyledLink to="/information">Informações</StyledLink>
-              <StyledLink to="/work_with_us">Trabalhe Conosco</StyledLink>
-              <StyledSpecialLink to="/registration">
+              <StyledLink onClick={() => setScrollTop()} to="/">
+                Início
+              </StyledLink>
+              <StyledLink onClick={() => setScrollTop()} to="/information">
+                Informações
+              </StyledLink>
+              <StyledLink onClick={() => setScrollTop()} to="/work_with_us">
+                Trabalhe Conosco
+              </StyledLink>
+              <StyledSpecialLink
+                onClick={() => setScrollTop()}
+                to="/registration"
+              >
                 Matrícula
               </StyledSpecialLink>
             </NavLinks>

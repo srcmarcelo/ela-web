@@ -5,9 +5,11 @@ export const Container = styled.div`
   background: linear-gradient(90deg, blue, darkblue);
   font-family: "PT Sans", sans-serif;
   height: 80px;
+  width: 100vw;
+  z-index: 1000;
   display: grid;
   grid-auto-flow: column;
-  position: sticky;
+  position: fixed;
 
   .logo {
     align-self: center;
