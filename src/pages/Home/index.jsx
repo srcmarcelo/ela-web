@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "antd";
 import Footer from "../../components/Footer";
 import HomeCarousel from "../../components/HomeCarousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,11 +48,11 @@ const Home = () => (
     </Container>
     <PicturesComponent>
       <Container style={{ alignItems: "center" }}>
-        <Image src="/images/side1.jpg" preview={false} className="image" />
+        <img src="/images/side1.jpg" preview={false} alt="" className="image" />
       </Container>
       <HomeCarousel />
       <Container style={{ alignItems: "center" }}>
-        <Image src="/images/side2.jpg" preview={false} className="image" />
+        <img src="/images/side2.jpg" preview={false} alt="" className="image" />
       </Container>
     </PicturesComponent>
     <Container>

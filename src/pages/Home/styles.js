@@ -24,20 +24,20 @@ export const Container = styled.div`
   text-align: center;
 
   .image {
-    // height: 20rem;
-    height: 8rem;
+    height: 20rem;
+    width: 20rem;
 
     @media (max-width: 1206px) {
-      // height: 17.5rem;
-      height: 12.5rem;
+      height: 17.5rem;
+      width: 17.5rem;
     }
     @media (max-width: 480px) {
-      // height: 16.25rem;
-      height: 12.25rem;
+      height: 16.25rem;
+      width: 16.25rem;
     }
     @media (max-width: 300px) {
-      // height: 14.375rem;
-      height: 12.375rem;
+      height: 14.375rem;
+      width: 14.375rem;
     }
   }
 `;
