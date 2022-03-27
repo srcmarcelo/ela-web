@@ -16,17 +16,19 @@ export const CarouselContainer = styled(Carousel)`
     width: 26.25rem;
   }
   @media (max-width: 480px) {
-    width: 17.5rem;
+    // width: 17.5rem;
+    width: 12.375rem;
   }
   @media (max-width: 300px) {
-    width: 14.375rem;
+    // width: 14.375rem;
+    width: 12.375rem;
   }
 `;
 
 export const Item = styled.div`
   display: flex;
   height: 23.75rem;
-  margin-top: 3.75rem;
+  // margin-top: 3.75rem;
 
   .image {
     height: 20rem;
@@ -37,11 +39,13 @@ export const Item = styled.div`
     }
 
     @media (max-width: 480px) {
-      height: 16.25rem;
+      // height: 16.25rem;
+      height: 12.375rem;
     }
 
     @media (max-width: 300px) {
-      height: 14.375rem;
+      // height: 14.375rem;
+      height: 12.375rem;
     }
   }
 `;

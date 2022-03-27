@@ -30,10 +30,12 @@ export const Container = styled.div`
       height: 17.5rem;
     }
     @media (max-width: 480px) {
-      height: 16.25rem;
+      // height: 16.25rem;
+      height: 12.375rem;
     }
     @media (max-width: 300px) {
-      height: 14.375rem;
+      // height: 14.375rem;
+      height: 12.375rem;
     }
   }
 `;
