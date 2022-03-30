@@ -1,17 +1,20 @@
 import React from "react";
 import { Image } from "antd";
 import { CarouselContainer, Item} from './styles'
+import image1 from "../../assets/images/img1.jpg"
+import image2 from "../../assets/images/img2.jpg"
+import image3 from "../../assets/images/img3.jpg"
 
 const HomeCarousel = () => (
         <CarouselContainer autoplay>
           <Item>
-            <Image src="/images/img1.jpg" preview={false} className="image" />
+            <Image src={image1} preview={false} className="image" />
           </Item>
           <Item>
-            <Image src="/images/img2.jpg" preview={false} className="image" />
+            <Image src={image2} preview={false} className="image" />
           </Item>
           <Item>
-            <Image src="/images/img3.jpg" preview={false} className="image" />
+            <Image src={image3} preview={false} className="image" />
           </Item>
         </CarouselContainer>
   );

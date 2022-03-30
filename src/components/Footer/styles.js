@@ -3,11 +3,22 @@ import styled from "styled-components";
 export const FooterContainer = styled.div`
   background: linear-gradient(90deg, blue, darkblue);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 
-  .iconContainer {
+  .logo {
+    display: flex;
+    font-family: "Times New Roman";
+    font-weight: bold;
     color: #fff;
-    font-size: 40px;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    .pet {
+      height: 60px;
+      width: 60px;
+      margin: 0px 7px 10px 0px;
+    }
   }
 
   .contactContainer {
@@ -33,11 +44,11 @@ export const FooterContainer = styled.div`
       }
 
       .contacts {
-        font-size: 24px;
+        font-size: 1.4rem;
       }
 
       .address {
-        font-size: 18px;
+        font-size: 1.2rem;
       }
     }
   }

@@ -15,7 +15,7 @@ const Registration = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title style={{ marginTop: "80px" }}>Matrículas</Title>
+        <Title style={{ marginTop: "80px" }}>Matrícula</Title>
       </TitleContainer>
       <FormRedirect
         title="Dê ao(a) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!"
@@ -23,7 +23,7 @@ const Registration = () => {
           preencha o formulário ${
             myWidth < 960 ? "pressionando o" : "clicando no"
           } botão ${myWidth < 1068 ? "abaixo" : "ao lado"}!`}
-        link="https://forms.gle/KQx5ScyhVapNcP1x8"
+        link="https://forms.gle/hvnsHCscuP3snxqH9"
       />
       <Footer />
     </Container>

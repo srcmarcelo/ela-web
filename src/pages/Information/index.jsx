@@ -50,7 +50,7 @@ const Information = () => (
           <div className="buildingInfo">
             <h1>
               Estamos com um projeto em mãos para que, em breve, a escola ELA
-              será um prédio de primeiro andar!
+              seja um prédio de primeiro andar!
             </h1>
           </div>
         </div>

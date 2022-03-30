@@ -24,7 +24,7 @@ const WorkWithUs = () => {
           preencha o formulário ${
             myWidth < 960 ? "pressionando o" : "clicando no"
           } botão ${myWidth < 1068 ? "abaixo" : "ao lado"}!`}
-        link="https://forms.gle/oB2aFUup4CTWzyFh7"
+        link="https://forms.gle/uFXaYm5U5Qm1BmUz8"
       />
       <Footer />
     </Container>

@@ -16,6 +16,8 @@ import {
   PicturesComponent,
 } from "./styles";
 import { Link } from "react-router-dom";
+import side1 from "../../assets/images/side1.jpg";
+import side2 from "../../assets/images/side2.jpg";
 
 const RenderIcon = ({ icon, label, path }) => {
   window.onresize = displayWindowSize;
@@ -33,10 +35,7 @@ const RenderIcon = ({ icon, label, path }) => {
   return (
     <div>
       <IconContainer>
-        <Link
-          to={path}
-          onClick={() => setScrollTop()}
-        >
+        <Link to={path} onClick={() => setScrollTop()}>
           <FontAwesomeIcon icon={icon} size={myWidth < 330 ? "5x" : "10x"} />
         </Link>
       </IconContainer>
@@ -48,15 +47,25 @@ const RenderIcon = ({ icon, label, path }) => {
 const Home = () => (
   <HomeContainer>
     <Container>
-      <Title style={{marginTop: "70px"}}>Educandário Ler e Aprender</Title>
+      <Title style={{ marginTop: "70px" }}>Educandário Ler e Aprender</Title>
     </Container>
     <PicturesComponent>
       <Container style={{ alignItems: "center" }}>
-        <img src="/images/side1.jpg" preview={false} alt="" className="image" />
+        <img
+          src={side1}
+          preview={false}
+          alt="Estamos prontos para construir um futuro melhor!"
+          className="image"
+        />
       </Container>
       <HomeCarousel />
       <Container style={{ alignItems: "center" }}>
-        <img src="/images/side2.jpg" preview={false} alt="" className="image" />
+        <img
+          src={side2}
+          preview={false}
+          alt="Um novo jeito de unir dons e talentos!"
+          className="image"
+        />
       </Container>
     </PicturesComponent>
     <Container>

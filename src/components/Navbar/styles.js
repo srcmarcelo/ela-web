@@ -12,46 +12,53 @@ export const Container = styled.div`
   position: fixed;
 
   .logo {
+    display: flex;
+    font-family: "Times New Roman";
+    font-weight: bold;
     align-self: center;
     color: #fff;
     font-size: 2rem;
     text-decoration: none;
     margin-left: 20%;
+    align-items: center;
+
+    .pet {
+      height: 60px;
+      width: 60px;
+      margin: 0px 7px 10px 0px;
+    }
   }
 
   .bars {
-    align-self: center;
-    justify-self: end;
-    margin-right: 20%;
-
-    &:hover {
-      color: #fff;
-    }
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20%;
   }
 `;
 
 export const Menu = styled.div`
-  display: grid;
-  background: #3089d7;
-  width: 100vw;
+  display: flex;
+  background: linear-gradient(90deg, blue, darkblue);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100vh;
   transition: 1s;
 
   .menuLinksContainer {
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-self: center;
     align-self: center;
   }
 
   .exitIcon {
-    justify-self: end;
-    margin: 5% 7% 0px 0px;
-
-    &:hover {
-      color: #fff;
-    }
+    position: absolute;
+    padding: 30px;
+    top: 0px;
+    right: 30px;
   }
 `;
 

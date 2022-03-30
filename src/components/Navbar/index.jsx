@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDove, faBars, faX } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import {
   Container,
   Menu,
@@ -10,6 +10,7 @@ import {
   StyledSpecialLink,
   MenuLinks,
 } from "./styles";
+import pet from "../../assets/images/pet.ico";
 
 const Navbar = () => {
   window.onresize = displayWindowSize;
@@ -36,12 +37,6 @@ const Navbar = () => {
     <>
       {menu && mobile ? (
         <Menu>
-          <FontAwesomeIcon
-            icon={faX}
-            size="2x"
-            className="exitIcon"
-            onClick={() => setMenu(false)}
-          />
           <div className="menuLinksContainer">
             <MenuLinks onClick={() => setMenu(false)} to="/">
               Início
@@ -56,19 +51,25 @@ const Navbar = () => {
               Trabalhe Conosco
             </MenuLinks>
           </div>
+          <FontAwesomeIcon
+            icon={faX}
+            size="2x"
+            className="exitIcon"
+            onClick={() => setMenu(false)}
+          />
         </Menu>
       ) : (
         <Container>
           <Link onClick={() => setScrollTop()} to="/" className="logo">
-            ELA <FontAwesomeIcon icon={faDove} />
+            <img src={pet} preview={false} className="pet" alt="dove" /> ELA
           </Link>
           {mobile ? (
-            <FontAwesomeIcon
-              icon={faBars}
-              className="bars"
-              size="2x"
-              onClick={() => setMenu(true)}
-            />
+            <div onClick={() => setMenu(true)} className="bars">
+              <FontAwesomeIcon
+                icon={faBars}
+                size="2x"
+              />
+            </div>
           ) : (
             <NavLinks>
               <StyledLink onClick={() => setScrollTop()} to="/">
