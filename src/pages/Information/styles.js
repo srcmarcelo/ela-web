@@ -18,6 +18,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-family: "Kids Font";
   color: #3089d7;
   font-size: 5rem;
   margin-bottom: 0.2rem;
@@ -55,6 +56,7 @@ export const Content = styled.div`
       text-align: center;
 
       h1 {
+        font-family: "Kids Font";
         margin: 0px;
         font-size: 2rem;
         color: #fff;
@@ -66,6 +68,7 @@ export const Content = styled.div`
       grid-template-columns: 1fr 1fr;
 
       .info {
+        font-family: "Kids Font";
         display: flex;
         background-color: #fff;
         color: #3089d7;
@@ -97,6 +100,7 @@ export const Content = styled.div`
       background-color: #fff;
 
       h1 {
+        font-family: "Kids Font";
         display: flex;
         margin: 0px;
         font-size: 1.6rem;
@@ -112,5 +116,9 @@ export const Content = styled.div`
     color: #fff;
     font-size: 2.5rem;
     padding: 20px;
+
+    span {
+      font-family: "Kids Font";
+    }
   }
 `;

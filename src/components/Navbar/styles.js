@@ -19,8 +19,12 @@ export const Container = styled.div`
     color: #fff;
     font-size: 2rem;
     text-decoration: none;
-    margin-left: 20%;
+    margin-left: 22%;
     align-items: center;
+
+    @media(max-width: 960px){
+      margin-left: 10%;
+    }
 
     .pet {
       height: 60px;
@@ -34,7 +38,7 @@ export const Container = styled.div`
     width: 100%;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 20%;
+    padding-right: 30%;
   }
 `;
 
@@ -58,7 +62,7 @@ export const Menu = styled.div`
     position: absolute;
     padding: 30px;
     top: 0px;
-    right: 30px;
+    right: 0px;
   }
 `;
 

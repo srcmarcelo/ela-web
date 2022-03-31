@@ -13,16 +13,17 @@ import {
 import pet from "../../assets/images/pet.ico";
 
 const Navbar = () => {
-  window.onresize = displayWindowSize;
-  window.onload = displayWindowSize;
   let myWidth = window.innerWidth;
-
+  
   const [mobile, setMobile] = useState(myWidth < 960);
   const [menu, setMenu] = useState(false);
 
+  window.onresize = displayWindowSize;
+  window.onload = displayWindowSize;
+
   function displayWindowSize() {
     myWidth = window.innerWidth;
-    setMobile(myWidth < 960);
+    if (mobile) setMobile(myWidth < 960);
   }
 
   function setScrollTop() {
@@ -65,10 +66,7 @@ const Navbar = () => {
           </Link>
           {mobile ? (
             <div onClick={() => setMenu(true)} className="bars">
-              <FontAwesomeIcon
-                icon={faBars}
-                size="2x"
-              />
+              <FontAwesomeIcon icon={faBars} size="2x" />
             </div>
           ) : (
             <NavLinks>
