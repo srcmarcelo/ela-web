@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Button } from "antd";
 
 export const Container = styled.div`
-  padding: 0% 10% 5% 10%;
+  padding: 0% 10% 4% 10%;
   justify-content: center;
   align-items: center;
 `;

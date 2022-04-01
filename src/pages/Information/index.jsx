@@ -19,7 +19,7 @@ const Information = () => (
         <div className="aboutUs">
           <div className="mainInfo">
             <h1>
-              O Educandário Ler e Aprender foi fundado em 1996 por Naedja e
+              O Educandário Ler e Aprender foi fundado em 1994 por Naedja e
               Miriam Santiago, hoje diretora e vice-diretora da escola.
             </h1>
           </div>
@@ -28,7 +28,7 @@ const Information = () => (
             <div className="info">Ambiente familiar.</div>
             <div className="info">Princípios cristãos.</div>
             <div className="info">
-              Profissionais especializados em crianças autistas!
+              Profissionais especializadas em educação especial!
             </div>
           </div>
         </div>

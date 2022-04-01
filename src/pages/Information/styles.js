@@ -56,10 +56,11 @@ export const Content = styled.div`
       text-align: center;
 
       h1 {
-        font-family: "Kids Font";
+        font-family: "Content Font";
         margin: 0px;
         font-size: 2rem;
         color: #fff;
+        align-self: center;
       }
     }
 
@@ -68,7 +69,8 @@ export const Content = styled.div`
       grid-template-columns: 1fr 1fr;
 
       .info {
-        font-family: "Kids Font";
+        font-family: "Times New Roman";
+        font-weight: bold;
         display: flex;
         background-color: #fff;
         color: #3089d7;
@@ -100,7 +102,8 @@ export const Content = styled.div`
       background-color: #fff;
 
       h1 {
-        font-family: "Kids Font";
+        font-family: "Times New Roman";
+        font-weight: bold;
         display: flex;
         margin: 0px;
         font-size: 1.6rem;

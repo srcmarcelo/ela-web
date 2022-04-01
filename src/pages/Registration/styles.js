@@ -12,6 +12,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-family: "Kids Font";
   color: #3089d7;
   font-size: 80px;
   margin-bottom: 0.2rem;

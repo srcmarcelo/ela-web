@@ -15,10 +15,10 @@ const Registration = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title style={{ marginTop: "80px" }}>Matrícula</Title>
+        <Title style={{ marginTop: "90px" }}>Matrícula</Title>
       </TitleContainer>
       <FormRedirect
-        title="Dê ao(a) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!"
+        title="Dê ao(à) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!"
         sub={`Para fazer a pré-matrícula,
           preencha o formulário ${
             myWidth < 960 ? "pressionando o" : "clicando no"

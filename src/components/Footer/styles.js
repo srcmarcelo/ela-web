@@ -2,6 +2,10 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   background: linear-gradient(90deg, blue, darkblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 10px;
 
