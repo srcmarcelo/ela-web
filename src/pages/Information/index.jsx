@@ -24,11 +24,11 @@ const Information = () => (
             </h1>
           </div>
           <div className="shortInfo">
-            <div className="info">Ensinamos do maternal ao infantil!</div>
-            <div className="info">Ambiente familiar.</div>
-            <div className="info">Princípios cristãos.</div>
+            <div className="info">Ensinamos do maternal ao infantil</div>
+            <div className="info">Aulas de inglês e libras</div>
+            <div className="info">Princípios cristãos</div>
             <div className="info">
-              Profissionais especializadas em educação especial!
+              Profissionais especializadas em educação especial
             </div>
           </div>
         </div>
@@ -62,11 +62,14 @@ const Information = () => (
         <div className="calendar">
           <span>Próximos Eventos:</span>
           <div className="eventsContainer">
+            <InfoEvent title="Páscoa" date="14/04/2022" />
+            <InfoEvent title="Dia do livro" date="18/04/2022" />
             <InfoEvent title="Dia das mães" date="06/05/2022" />
             <InfoEvent title="Festa Junina" date="A confirmar" />
             <InfoEvent title="Férias" date="A confirmar" />
-            <InfoEvent title="Volta às aulas" date="A confirmar" />
-            <InfoEvent title="Dia das crianças" date="10/10/2022" />
+            <InfoEvent title="Dia do estudante" date="11/08/2022" />
+            <InfoEvent title="Dia das crianças" date="12/10/2022" />
+            <InfoEvent title="Dia do professor" date="15/10/2022" />
             <InfoEvent title="Formatura" date="A confirmar" />
           </div>
         </div>

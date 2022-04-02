@@ -14,8 +14,8 @@ import pet from "../../assets/images/pet.ico";
 
 const Navbar = () => {
   let myWidth = window.innerWidth;
-  
-  const [mobile, setMobile] = useState(myWidth < 960);
+
+  const [mobile, setMobile] = useState(true);
   const [menu, setMenu] = useState(false);
 
   window.onresize = displayWindowSize;
@@ -23,12 +23,17 @@ const Navbar = () => {
 
   function displayWindowSize() {
     myWidth = window.innerWidth;
-    if (mobile) setMobile(myWidth < 960);
+    setMobile(myWidth < 960);
   }
 
   function setScrollTop() {
     window.scrollTo(0, 0);
   }
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    setMobile(window.innerWidth < 960);
+  });
 
   useEffect(() => {
     if (menu) setScrollTop();
