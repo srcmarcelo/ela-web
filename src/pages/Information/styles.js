@@ -24,8 +24,14 @@ export const Title = styled.h1`
   margin-bottom: 0.2rem;
   padding: 10px;
 
+  @media (max-width: 600px) {
+    font-size: 4rem;
+  }
   @media (max-width: 480px) {
     font-size: 3rem;
+  }
+  @media (max-width: 380px) {
+    font-size: 2rem;
   }
 `;
 
@@ -118,10 +124,24 @@ export const Content = styled.div`
     background-color: #3089d7;
     color: #fff;
     font-size: 2.5rem;
-    padding: 20px;
+    padding: 20px 20px 40px 20px;
+    width: 100%;
 
     span {
       font-family: "Kids Font";
+    }
+
+    .eventsContainer {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5% 2%;
+      margin-top: 10px;
+
+      @media (max-width: 960px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2% 0px;
+        padding-bottom: 50px;
+      }
     }
   }
 `;

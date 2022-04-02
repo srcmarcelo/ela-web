@@ -73,7 +73,7 @@ const Home = () => (
     </Container>
     <NewsContainer>
       <h2 className="title">
-        CONHEÇA, COLABORE E MATRICULE SEU FILHO(A) AGORA MESMO!
+        CONHEÇA, COLABORE E MATRICULE SEU(UA) FILHO(A) AGORA MESMO!
       </h2>
       <div className="iconsContainer">
         <RenderIcon

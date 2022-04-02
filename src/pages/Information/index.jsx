@@ -1,5 +1,4 @@
 import React from "react";
-import { Calendar } from "antd";
 import {
   InfoContainer,
   Container,
@@ -7,6 +6,7 @@ import {
   Title,
   Content,
 } from "./styles";
+import InfoEvent from "./components/InfoEvent";
 import Footer from "../../components/Footer";
 
 const Information = () => (
@@ -45,7 +45,7 @@ const Information = () => (
             </h1>
           </div>
           <div className="buildingInfo">
-            <h1>Contamos com 8 salas climatizadas e bem organizadas.</h1>
+            <h1>Contamos com 7 salas climatizadas e bem organizadas.</h1>
           </div>
           <div className="buildingInfo">
             <h1>
@@ -60,8 +60,15 @@ const Information = () => (
       </TitleContainer>
       <Content>
         <div className="calendar">
-          <span>Calendário de Eventos</span>
-          <Calendar fullscreen={false} id="calendario" />
+          <span>Próximos Eventos:</span>
+          <div className="eventsContainer">
+            <InfoEvent title="Dia das mães" date="06/05/2022" />
+            <InfoEvent title="Festa Junina" date="A confirmar" />
+            <InfoEvent title="Férias" date="A confirmar" />
+            <InfoEvent title="Volta às aulas" date="A confirmar" />
+            <InfoEvent title="Dia das crianças" date="10/10/2022" />
+            <InfoEvent title="Formatura" date="A confirmar" />
+          </div>
         </div>
       </Content>
     </Container>
