@@ -121,6 +121,8 @@ export const Content = styled.div`
   }
 
   .calendar {
+    display: flex;
+    flex-direction: column;
     background-color: #3089d7;
     color: #fff;
     font-size: 2.5rem;
@@ -139,8 +141,6 @@ export const Content = styled.div`
 
       @media (max-width: 960px) {
         grid-template-columns: repeat(1, 1fr);
-        gap: 2% 0px;
-        padding-bottom: 180px;
       }
     }
   }
