@@ -60,9 +60,9 @@ const Information = () => (
       </TitleContainer>
       <Content>
         <div className="calendar">
-          <span>Próximos Eventos:</span>
+          <span>Próximas Comemorações:</span>
           <div className="eventsContainer">
-            <InfoEvent title="Páscoa" date="14/04/2022" />
+            <InfoEvent title="Páscoa" date="13/04/2022" />
             <InfoEvent title="Dia do livro" date="29/04/2022" />
             <InfoEvent title="Dia das mães" date="06/05/2022" />
             <InfoEvent title="Festa Junina" date="A confirmar" />

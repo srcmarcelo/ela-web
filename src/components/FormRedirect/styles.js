@@ -5,6 +5,7 @@ export const Container = styled.div`
   padding: 0% 10% 4% 10%;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 export const Content = styled.div`

@@ -15,7 +15,7 @@ const Registration = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title style={{ marginTop: "90px" }}>Matrícula</Title>
+        <Title style={{ marginTop: "100px" }}>Matrícula</Title>
       </TitleContainer>
       <FormRedirect
         title="Dê ao(à) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!"
