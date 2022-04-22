@@ -47,13 +47,13 @@ const Navbar = () => {
             <MenuLinks onClick={() => setMenu(false)} to="/">
               Início
             </MenuLinks>
-            <MenuLinks onClick={() => setMenu(false)} to="/registration">
+            <MenuLinks onClick={() => setMenu(false)} to="/matricula">
               Matrícula
             </MenuLinks>
-            <MenuLinks onClick={() => setMenu(false)} to="/information">
+            <MenuLinks onClick={() => setMenu(false)} to="/informacoes">
               Informações
             </MenuLinks>
-            <MenuLinks onClick={() => setMenu(false)} to="/work_with_us">
+            <MenuLinks onClick={() => setMenu(false)} to="/trabalhe_conosco">
               Trabalhe Conosco
             </MenuLinks>
           </div>
@@ -78,15 +78,15 @@ const Navbar = () => {
               <StyledLink onClick={() => setScrollTop()} to="/">
                 Início
               </StyledLink>
-              <StyledLink onClick={() => setScrollTop()} to="/information">
+              <StyledLink onClick={() => setScrollTop()} to="/informacoes">
                 Informações
               </StyledLink>
-              <StyledLink onClick={() => setScrollTop()} to="/work_with_us">
+              <StyledLink onClick={() => setScrollTop()} to="/trabalhe_conosco">
                 Trabalhe Conosco
               </StyledLink>
               <StyledSpecialLink
                 onClick={() => setScrollTop()}
-                to="/registration"
+                to="/matricula"
               >
                 Matrícula
               </StyledSpecialLink>

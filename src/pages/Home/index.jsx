@@ -79,14 +79,14 @@ const Home = () => (
         <RenderIcon
           icon={faCircleInfo}
           label="Infomações"
-          path="/information"
+          path="/informacoes"
         />
         <RenderIcon
           icon={faChalkboardUser}
           label="Trabalhe Conosco"
-          path="/work_with_us"
+          path="/trabalhe_conosco"
         />
-        <RenderIcon icon={faBook} label="Matrícula" path="/registration" />
+        <RenderIcon icon={faBook} label="Matrícula" path="/matricula" />
       </div>
     </NewsContainer>
     <Container>
