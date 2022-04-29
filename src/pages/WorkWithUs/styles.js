@@ -9,7 +9,7 @@ export const TitleContainer = styled.div`
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 `;
 
 export const Title = styled.h1`

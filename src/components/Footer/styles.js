@@ -8,6 +8,7 @@ export const FooterContainer = styled.div`
   align-items: center;
   text-align: center;
   padding: 10px;
+  width: 100%;
 
   .logo {
     display: flex;
