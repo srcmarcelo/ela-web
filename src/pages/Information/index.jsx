@@ -65,7 +65,7 @@ const Information = () => (
             <InfoEvent title="Páscoa" date="13/04/2022" />
             <InfoEvent title="Dia do livro" date="29/04/2022" />
             <InfoEvent title="Dia das mães" date="06/05/2022" />
-            <InfoEvent title="Festa Junina" date="A confirmar" />
+            <InfoEvent title="Festa Junina" date="22/06/2022" />
             <InfoEvent title="Férias" date="Mês de julho" />
             <InfoEvent title="Dia do estudante" date="11/08/2022" />
             <InfoEvent title="Dia das crianças" date="12/10/2022" />
