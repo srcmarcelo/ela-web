@@ -28,7 +28,7 @@ const Registration = () => {
       />
       <NoticesContainer>
         <Notice content="O Educandário Ler e Aprender só trabalha com crianças a partir dos 3 anos de idade!" />
-        <Notice content="No momento, estamos com vagas apenas para o turno da manhã!" />
+        {/* <Notice content="No momento, estamos com vagas apenas para o turno da manhã!" /> */}
       </NoticesContainer>
       <Footer />
     </Container>
