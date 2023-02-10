@@ -4,6 +4,7 @@ export const EventContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
@@ -12,6 +13,7 @@ export const EventContainer = styled.div`
     font-family: "Kids Font";
     color: #3089d7;
     font-size: 2rem;
+    margin: 0px;
   }
 
   span {

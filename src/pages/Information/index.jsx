@@ -45,12 +45,11 @@ const Information = () => (
             </h1>
           </div>
           <div className="buildingInfo">
-            <h1>Contamos com 7 salas climatizadas e bem organizadas.</h1>
+            <h1>NOVO PRÉDIO, NOVA ESTRUTURA</h1>
           </div>
           <div className="buildingInfo">
             <h1>
-              Estamos com um projeto em mãos para que, em breve, a escola ELA
-              seja um prédio de primeiro andar!
+              Aulas de ballet, judô, educação física e muito mais!
             </h1>
           </div>
         </div>
@@ -60,17 +59,17 @@ const Information = () => (
       </TitleContainer>
       <Content>
         <div className="calendar">
-          <span>Próximas Comemorações:</span>
+          <span style={{fontSize: '1.5rem', textAlign: 'center'}}>Algumas das nossas Comemorações</span>
           <div className="eventsContainer">
-            <InfoEvent title="Páscoa" date="13/04/2022" />
-            <InfoEvent title="Dia do livro" date="29/04/2022" />
-            <InfoEvent title="Dia das mães" date="06/05/2022" />
-            <InfoEvent title="Festa Junina" date="22/06/2022" />
-            <InfoEvent title="Férias" date="Mês de julho" />
-            <InfoEvent title="Dia do estudante" date="11/08/2022" />
-            <InfoEvent title="Dia das crianças" date="12/10/2022" />
-            <InfoEvent title="Dia do professor" date="15/10/2022" />
-            <InfoEvent title="Formatura" date="A confirmar" />
+            <InfoEvent title="Páscoa" />
+            <InfoEvent title="Dia do livro" />
+            <InfoEvent title="Dia das mães" />
+            <InfoEvent title="Festa Junina" />
+            <InfoEvent title="Dia dos pais" />
+            <InfoEvent title="Dia do estudante" />
+            <InfoEvent title="Dia das crianças" />
+            <InfoEvent title="Dia do professor" />
+            <InfoEvent title="Formatura" />
           </div>
         </div>
       </Content>
