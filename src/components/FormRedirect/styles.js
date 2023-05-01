@@ -55,3 +55,28 @@ export const FormButtom = styled(Button)`
   align-items: center;
   justify-content: center;
 `;
+
+export const WhatsAppFormButtom = styled(Button)`
+  display: flex;
+  border-radius: 20px;
+  background-color: #25d366;
+  border-color: #25d366;
+  color: #fff;
+  width: 200px;
+  height: 100px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+
+  :hover {
+    background-color: #ece5dd !important;
+    border-color: #ece5dd !important;
+    color: #075e54 !important;
+  }
+
+  :focus {
+    background-color: #25d366;
+    border-color: #25d366;
+    color: #fff;
+  }
+`;
