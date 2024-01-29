@@ -1,8 +1,8 @@
-import React from "react";
-import { Container, TitleContainer, Title, NoticesContainer } from "./styles";
-import Footer from "../../components/Footer";
-import FormRedirect from "../../components/FormRedirect";
-import Notice from "../../components/Notice";
+import React from 'react';
+import { Container, TitleContainer, Title, NoticesContainer } from './styles';
+import Footer from '../../components/Footer';
+import FormRedirect from '../../components/FormRedirect';
+import Notice from '../../components/Notice';
 
 const Registration = () => {
   window.onresize = displayWindowSize;
@@ -16,18 +16,27 @@ const Registration = () => {
   return (
     <Container>
       <TitleContainer>
-        <Title style={{ marginTop: "100px" }}>Matrícula</Title>
+        <Title style={{ marginTop: '100px' }}>Matrícula</Title>
       </TitleContainer>
       <FormRedirect
-        title="Dê ao(à) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!"
+        title='Dê ao(à) seu(ua) filho(a) o ensino de qualidade que ele(a) merece!'
         sub={`Para fazer a pré-matrícula,
           preencha o formulário ${
-            myWidth < 960 ? "pressionando o" : "clicando no"
-          } botão ${myWidth < 1068 ? "abaixo" : "ao lado"}!`}
-        link="https://forms.gle/hvnsHCscuP3snxqH9"
+            myWidth < 960 ? 'pressionando o' : 'clicando no'
+          } botão ${myWidth < 1068 ? 'abaixo' : 'ao lado'}!`}
+        link='https://forms.gle/hvnsHCscuP3snxqH9'
       />
       <NoticesContainer>
-        <Notice content="O Educandário Ler e Aprender só trabalha com crianças a partir dos 3 anos de idade!" />
+        <Notice content='O Educandário Ler e Aprender só trabalha com crianças a partir dos 3 anos de idade!' />
+        <Notice
+          content='Turmas com vagas encerradas no momento (atualizado diariamente):'
+          list={[
+            '3⁰ ano manhã ',
+            '1⁰ ano tarde',
+            'Infantil IV tarde',
+            '3⁰ ano tarde',
+          ]}
+        />
         {/* <Notice content="No momento, estamos com vagas apenas para o turno da manhã!" /> */}
       </NoticesContainer>
       <Footer />

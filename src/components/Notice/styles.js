@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
   width: 360px;
-  height: 220px;
+  min-height: 220px;
   background: #fff;
   border: 1px solid #3089d7;
   border-radius: 20px;
@@ -13,11 +13,15 @@ export const Container = styled.div`
   margin: 0px 30px 20px;
 
   h1 {
-      color: #3089d7;
-      font-weight: bold;
+    color: #3089d7;
+    font-weight: bold;
   }
 
   h2 {
-      color: #3089d7;
+    color: #3089d7;
+  }
+
+  li {
+    color: #3089d7;
   }
 `;
