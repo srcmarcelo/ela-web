@@ -27,14 +27,12 @@ const Registration = () => {
         link='https://forms.gle/hvnsHCscuP3snxqH9'
       />
       <NoticesContainer>
-        <Notice content='O Educandário Ler e Aprender só trabalha com crianças a partir dos 3 anos de idade!' />
+        <Notice content='O Educandário Ler e Aprender só trabalha com crianças a partir dos 2 anos de idade!' />
         <Notice
           content='Turmas com vagas encerradas no momento (atualizado diariamente):'
           list={[
-            '3⁰ ano manhã ',
-            '1⁰ ano tarde',
-            'Infantil IV tarde',
-            '3⁰ ano tarde',
+            '3⁰ ano manhã',
+            'Todas da tarde, exceto maternal e 5⁰ ano',
           ]}
         />
         {/* <Notice content="No momento, estamos com vagas apenas para o turno da manhã!" /> */}
