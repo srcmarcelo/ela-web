@@ -28,7 +28,7 @@ const HomeCarousel = () => (
         src={image3}
         preview={false}
         className='image'
-        alt='Impactar a educação da futura geração: esse é o nosso proósito!'
+        alt='Impactar a educação da futura geração. Esse é o nosso propósito!'
       />
     </Item>
   </CarouselContainer>
